@@ -1,0 +1,129 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+   
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 0 15px rgb(126, 118, 118); */
+    padding: 1rem;
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-around;
+    align-items: center;
+
+    
+
+ 
+}
+.links {
+    text-decoration:none;
+    display: flex;
+    flex-direction: rows;
+    width: 800px;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+    margin-left: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #11adf0, #40e495, #30dd8a, #a756f4);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+   
+}
+
+
+
+.logo {
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 2px;
+
+    
+}
+
+
+
+
+
+/* Link buttons */
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto; height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 10px 5px 5px;
+    min-width: 150px;
+  }
+    .btn span {         
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      top: 0; left: 0;
+      width: 100%;
+      padding: 15px 5px;
+      transition: 0.2s;
+    }
+    .btn-2::before {
+        background-color: rgb(28, 31, 30);
+        transition: 0.3s ease-out;
+      }
+      .btn-2 span {
+        color: rgb(28, 31, 30);
+        border-radius: 20px;
+        transition: 0.2s;
+      }  
+      .btn-2 span:hover {
+        color: rgb(255,255,255);
+        transition: 0.2s 0.1s;
+        background-color: black;
+      }
+      
