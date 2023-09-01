@@ -1,0 +1,32 @@
+
+.container {
+    
+  
+    background-color: rgb(211, 227, 211);
+     padding: 1em;
+     padding-top: 130px;
+ }
+ .holder{
+    padding: 2em 4em;
+ }
+ .grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+     grid-gap: 30px;
+     align-items: stretch;
+   }
+
+
+  
+  
+  @media only screen and (max-width: 750px) {
+    .container {
+ 
+     display: flex;
+     justify-content: center;
+    }
+    .holder{
+        padding: none;
+     }
+  }
+  
