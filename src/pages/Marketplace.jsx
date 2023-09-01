@@ -1,22 +1,148 @@
 import React from 'react'
+import '../styles/marketplace.css'
+import Card from '../components/Card'
+import Loader from '../components/Loader';
+import { useEffect,useState } from 'react';
+
+
+
+
 
 const Marketplace = () => {
+
+  const [loading, setLoading] = useState(false);
+  const [allPosts, setAllPosts] = useState(null);
+
+  useEffect(() => {
+    setLoading(true);
+    const fetchPosts = async () => {
+        setLoading(true);
+        try {
+            // const title = 'john wick';
+            const response = await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=1bced0e9&s=earth");
+
+            if (response.ok) {
+                const result = await response.json();
+                setAllPosts(result.Search);
+                console.log(allPosts);
+                
+            }
+        } catch (e) {
+            alert(e)
+        } 
+        // finally {
+        //     setLoading(true);
+        // }
+
+    }
+    fetchPosts();
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+    
+}, []);
+
+
   return (
     <div>Marketplace
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
-      <div>market</div>
+      
+      {loading && <Loader/> }
+      {/* {loading ?
+      
+      (
+     
+      <Loader/>
+      
+      
+      )
+
+
+      :
+      ( */}
+      
+      
+      <div class="container">
+        <div className='holder'>
+  <main class="grid">
+
+<Card
+        name="refined Hill Arizona"
+        value="$210"
+        sector="Petroleum"
+        description="The Inner Mongolia Chao'er Forest Industry IFM Project, implemented by Chao'er Forest Industry"
+        date="2018"
+        location="Sidney Australia"
+        verify="true"
+        imgUrl="https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3260&q=80"
+      
+        
+      />
+      <Card
+        name="Giya Solar"
+        value="$45"
+        sector="Solar"
+        description="lorem*daedd awmdwdnwndkawnd wdawdawdwdwdwdwd "
+        date="2018"
+        location="Sidney"
+        imgUrl="https://images.unsplash.com/photo-1536408745983-0f03be6e8a00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80"
+      />
+      <Card
+        name="hey"
+        value="hey"
+        sector="hey"
+        description="lorem*daedd awmdwdnwndkawnd "
+        date="2018"
+        location="Sidney"
+        verify="true"
+        imgUrl="https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3260&q=80"
+      />
+      <Card
+        name="hey"
+        value="hey"
+        sector="hey"
+        description="lorem*daedd awmdwdnwndkawnd "
+        date="2018"
+        location="Sidney"
+        imgUrl="https://images.unsplash.com/photo-1558449028-b53a39d100fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80"
+      />
+      <Card
+        name="hey"
+        value="hey"
+        sector="hey"
+        description="lorem*daedd awmdwdnwndkawnd "
+        date="2018"
+        location="Sidney"
+        imgUrl="https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3260&q=80"
+      />
+
+{allPosts?.length > 0 ? (
+      
+          allPosts.map( (post) => (
+            <Card
+            name="Refined Hill arizona "
+            value="$210"
+            sector="Petroleum"
+            description="The Inner Mongolia Chao'er Forest Industry IFM Project implemented by Chao'er Forest. To know wmore about ahd hdaj wigg ahdkakadk jahda adjaj  dhawbd djadjaw dawdawd dwdwd  adad adawd da"
+            date="2018"
+            location="Sidney Australia"
+            verify="true"
+            // imgUrl="https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3260&q=80"
+          
+            imgUrl={post.Poster}
+            />
+          ))
+        
+      ) : (
+       
+          <h2>No Posts</h2>
+      )}
+       
+     </main>
+     </div>
+     </div>
+      {/* )  
+    } */}
+      
     </div>
   )
 }

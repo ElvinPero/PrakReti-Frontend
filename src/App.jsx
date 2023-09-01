@@ -6,6 +6,8 @@ import Home from './pages/Home'
 import Marketplace from './pages/Marketplace'
 import About from './pages/About'
 import Verified from './pages/Verified'
+
+import CardDetail from './components/CardDetail'
 import './styles/header.css'
 
 const App =()=> {
@@ -21,6 +23,7 @@ const App =()=> {
         <Route path="/marketplace" element={<Marketplace/>}/> 
         <Route path="/about" element={<About/>}/> 
         <Route path="/verified" element={<Verified/>}/> 
+        <Route path="/marketplace/:id" element={<CardDetail/>}/> 
         <Route path="*" element={<Home/>}/> 
     
       </Routes>
