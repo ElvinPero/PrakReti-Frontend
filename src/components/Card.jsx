@@ -6,14 +6,27 @@ import { Link } from 'react-router-dom'
 const Card = ({name,value,sector,date,location,description,imgUrl,verify}) => {
     const des= description.substring(0,100);
     // const des= description.split('.')[0];
+    
+    const cardData={
+        name,
+        value,
+        sector,
+        date,
+        location,
+        description,
+        imgUrl,
+        verify
+       
+    };
     return (
     
-    <Link to={`/marketplace/${name}`} style = {{textDecoration:"none",color:"black"}}>
+    <Link to={`/marketplace/${name}`} state={cardData} style = {{textDecoration:"none",color:"black"}}>
     <div className="img-card iCard-style2">
+    
     
                         <div className="card-content">
                             <div className="card-image">
-                            {verify &&
+                            {verify=="true" &&
                             <span className="card-caption">
                                    
                                   

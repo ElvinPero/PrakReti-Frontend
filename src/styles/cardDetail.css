@@ -1,0 +1,151 @@
+@import url('https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2VpTDZoNG1iYWZKaFRwLWRRZVZOcjIxWERHd3xBQ3Jtc0ttTG9yWG1VRDVEanBEM3BRMTBRSDBzWi1NWm9VVV9GZnFiYzZvU0gxR0lKQlJiaGdNZHZfenY0WjZ3ZUwyam9pckZjbkI3U2RmVUVMd21MX0hNSWZEZlZjZ2ZwZm4xTGNrQ1NwU1pQNWFVWmZmNGVTUQ&q=https%3A%2F%2Ftinyurl.com%2FGoogleFontsPoppins&v=iP-jnnzxnqU');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Lato&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Lato&family=Montserrat&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Lato&family=Montserrat&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Lato&family=Montserrat&family=PT+Sans&family=Roboto:wght@400;500&display=swap');
+
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+.prod-container{
+    margin: 100px;
+    background-color: rgb(183, 236, 183);
+}
+
+.prod-imag{
+ 
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200px;
+  
+}
+
+.prod-name{
+    margin-bottom: 1.5rem;
+    margin-left: 0.2rem;
+    color: azure;
+    font-size: 1.5rem;
+    font-family: 'Acme', sans-serif;
+}
+
+
+
+.prod-date {
+    background-color: #f1f1f1;
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px 30px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.prod-sector{
+    background-color: #f1f1f1;
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px 30px; /* Adjust padding */
+    text-align: center; /* Center horizontally */
+    line-height: 1; /* Center vertically by setting line height equal to container height */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.prod-location{
+    background-color: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px 30px; /* Adjust padding */
+    text-align: center; /* Center horizontally */
+    line-height: 1; /* Center vertically by setting line height equal to container height */
+}
+
+.prod-detail{
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+     overflow: hidden;
+     text-overflow: ellipsis;
+      display: -webkit-box;
+       -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+    
+}
+
+.prod-price{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 6rem;
+    margin-left: 16px;
+}
+
+.prod-descrip{
+    margin: 20px;
+    width : 49vw;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    overflow: hidden;
+     text-overflow: ellipsis;
+      display: -webkit-box;
+       -webkit-line-clamp: 15;
+     -webkit-box-orient: vertical;
+}
+
+.abc{
+    display: flex;
+    /* max-height: 42vh; */
+}
+
+.map{
+    margin:20px;
+    width:49vw;
+    font-family: 'PT Sans', sans-serif;
+    overflow: hidden;
+     text-overflow: ellipsis;
+      display: -webkit-box;
+     -webkit-line-clamp: 15;
+     -webkit-box-orient: vertical;
+
+}
+
+.back-button {
+    /* position: relative; */
+    /* margin-top: 30px; */
+    height: 25px; 
+    width: 25px; 
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10%;
+    cursor: pointer;
+    text-align: center;
+    /* align-items: center; */
+}
+.backimage{
+    padding-top: 3px;
+    padding-left: 3px;
+      background-image: url('prod-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.prod-info {
+    display: none;
+}

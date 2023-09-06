@@ -22,9 +22,9 @@ const Header = () => {
         </Link> 
 
 
-        <Link to="/verified">
+        <Link to="/verify">
         <button class="btn btn-2 hover-filled-slide-right">
-            <span> Verified</span>
+            <span> Verify</span>
         </button>    
         </Link> 
         <Link to="/about">
