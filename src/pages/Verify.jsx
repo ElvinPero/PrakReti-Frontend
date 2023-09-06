@@ -5,12 +5,7 @@ import Loader from '../components/Loader';
 import { useEffect,useState } from 'react';
 
 import { Link } from 'react-router-dom';
-
-
-
-
-const Marketplace = () => {
-
+const Verify = () => {
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null);
 
@@ -45,7 +40,7 @@ const Marketplace = () => {
 
 
   return (
-    <div>Marketplace
+    <div>Verify
       
       {loading && <Loader/> }
       
@@ -73,7 +68,7 @@ const Marketplace = () => {
         description="The Inner Mongolia Chao'er Forest Industry IFM Project, implemented by Chao'er Forest Industry"
         date="2018"
         location="Sidney Australia"
-        verify="true"
+        verify="false"
         imgUrl="https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3260&q=80"
       
         
@@ -96,7 +91,7 @@ const Marketplace = () => {
         With the noble mission, Gaia Solar has become a famous brand in concentrated solar power industry. Gaia researched on solar receiver tube technology more than ten years ago, and as a strategic partner of CASC, Gaia Solar promoted high quality and traceable solar receiver tube RT-4060. Gaia Solar also successfully researched out parabolic trough solar collectors PT-5760 and PT-2O, which can be used for solar thermal plant and steam generation. "
         date="2018"
         location="Sidney"
-        verify="true"
+       
         imgUrl="https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3260&q=80"
       />
       <Card
@@ -118,10 +113,10 @@ const Marketplace = () => {
         imgUrl="https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3260&q=80"
       />
 
-{allPosts?.length > 0 ? (
+{/* {allPosts?.length > 0 ? (
       
           allPosts.map( (post) => (
-            <Card
+          <Card
             name="Refined Hill arizona "
             value="$210"
             sector="Petroleum"
@@ -139,7 +134,7 @@ const Marketplace = () => {
       ) : (
        
           <h2>No Posts</h2>
-      )}
+      )} */}
        
      </main>
      </div>
@@ -150,4 +145,4 @@ const Marketplace = () => {
   )
 }
 
-export default Marketplace
+export default Verify
