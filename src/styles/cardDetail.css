@@ -92,7 +92,8 @@
 .prod-detail{
     display: flex;
     flex-direction: column;
-    padding: 1.3rem;
+    padding: 1.0rem;
+  
      overflow: hidden;
      text-overflow: ellipsis;
       display: -webkit-box;
@@ -125,11 +126,13 @@
       display: -webkit-box;
        -webkit-line-clamp: 15;
      -webkit-box-orient: vertical;
-     font-size: 1.3em;
+     font-size: 1.2em;
      max-height: 900px;
 }
 .abc{
     display: flex;
+    min-height: 580px;
+    max-height: 900px;
 }
 .prod-map{
     margin:20px;

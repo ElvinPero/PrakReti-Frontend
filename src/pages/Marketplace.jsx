@@ -93,7 +93,7 @@ const Marketplace = () => {
         "
         
         date="2018"
-        location="Sidney"
+        location="Los Angeles"
         imgUrl="https://images.unsplash.com/photo-1536408745983-0f03be6e8a00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80"
       />
       <Card
@@ -113,7 +113,7 @@ const Marketplace = () => {
         sector="hey"
         description="lorem*daedd awmdwdnwndkawnd "
         date="2018"
-        location="Sidney"
+        location="London"
         imgUrl="https://images.unsplash.com/photo-1558449028-b53a39d100fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80"
       />
       <Card
@@ -122,7 +122,7 @@ const Marketplace = () => {
         sector="hey"
         description="lorem*daedd awmdwdnwndkawnd "
         date="2018"
-        location="Sidney"
+        location="Las Vegas"
         imgUrl="https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3260&q=80"
       />
 
@@ -137,7 +137,7 @@ const Marketplace = () => {
             With the noble mission, Gaia Solar has become a famous brand in concentrated solar power industry. Gaia researched on solar receiver tube technology more than ten years ago, and as a strategic partner of CASC, Gaia Solar promoted high quality and traceable solar receiver tube RT-4060. Gaia Solar also successfully researched out parabolic trough solar collectors PT-5760 and PT-2O, which can be used for solar thermal plant and steam generation. "
             
             date="2018"
-            location="Sidney Australia"
+            location="Los Angeles"
             verify="true"
             // imgUrl="https://images.unsplash.com/photo-1468787737698-f5c03f0570dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3260&q=80"
           
