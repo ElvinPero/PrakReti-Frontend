@@ -70,7 +70,10 @@ const Marketplace = () => {
         name="refined Hill Arizona"
         value="$210"
         sector="Petroleum"
-        description="The Inner Mongolia Chao'er Forest Industry IFM Project, implemented by Chao'er Forest Industry"
+        description="From setup, Gaia Solar engaged in changing steadily deteriorating environment, and invested huge capitals on researching one kind of clean and sustainable energy.
+            With the noble mission, Gaia Solar has become a famous brand in concentrated solar power industry. Gaia researched on solar receiver tube technology more than ten years ago, and as a strategic partner of CASC, Gaia Solar promoted high quality and traceable solar receiver tube RT-4060. Gaia Solar also successfully researched out parabolic trough solar collectors PT-5760 and PT-2O, which can be used for solar thermal plant and steam generation. "
+            
+        
         date="2018"
         location="Sidney Australia"
         verify="true"
@@ -83,7 +86,12 @@ const Marketplace = () => {
         value="$45"
         sector="Solar"
         description="From setup, Gaia Solar engaged in changing steadily deteriorating environment, and invested huge capitals on researching one kind of clean and sustainable energy.
-        With the noble mission, Gaia Solar has become a famous brand in concentrated solar power industry. Gaia researched on solar receiver tube technology more than ten years ago, and as a strategic partner of CASC, Gaia Solar promoted high quality and traceable solar receiver tube RT-4060. Gaia Solar also successfully researched out parabolic trough solar collectors PT-5760 and PT-2O, which can be used for solar thermal plant and steam generation. "
+        With the noble mission, Gaia Solar has become a famous brand in concentrated solar power industry. Gaia researched on solar receiver tube technology more than ten years ago, and as a strategic partner of CASC, Gaia Solar promoted high quality and traceable solar receiver tube RT-4060. Gaia Solar also successfully researched out parabolic trough solar collectors PT-5760 and PT-2O, which can be used for solar thermal plant and steam generation. 
+        
+        From setup, Gaia Solar engaged in changing steadily deteriorating environment, and invested huge capitals on researching one kind of clean and sustainable energy.
+        With the noble mission, Gaia Solar has become a famous brand in concentrated solar power industry. Gaia researched on solar receiver tube technology more than ten years ago, and as a strategic partner of CASC, Gaia Solar promoted high quality and traceable solar receiver tube RT-4060. Gaia Solar also successfully researched out parabolic trough solar collectors PT-5760 and PT-2O, which can be used for solar thermal plant and steam generation.
+        "
+        
         date="2018"
         location="Sidney"
         imgUrl="https://images.unsplash.com/photo-1536408745983-0f03be6e8a00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80"
@@ -127,6 +135,7 @@ const Marketplace = () => {
             sector="Petroleum"
             description="From setup, Gaia Solar engaged in changing steadily deteriorating environment, and invested huge capitals on researching one kind of clean and sustainable energy.
             With the noble mission, Gaia Solar has become a famous brand in concentrated solar power industry. Gaia researched on solar receiver tube technology more than ten years ago, and as a strategic partner of CASC, Gaia Solar promoted high quality and traceable solar receiver tube RT-4060. Gaia Solar also successfully researched out parabolic trough solar collectors PT-5760 and PT-2O, which can be used for solar thermal plant and steam generation. "
+            
             date="2018"
             location="Sidney Australia"
             verify="true"

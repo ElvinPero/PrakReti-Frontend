@@ -18,51 +18,55 @@ const CardDetail = () => {
   return (
     <>
    <div>hey</div>
-  
+   <div class="prod-container">
 
 
-    <div className="prod-container">
-        <div class ="backimage">
-        <div className='back-button'>
-
-            <button onClick={goBack} >
-                Back
-            </button>
-        <i class="fa fa-arrow-left"></i>
+    <div class="backimage">
+        <img class="imagi" src={imgUrl} alt="Forest" />
+        <div class="imgPosition">
+        <div onClick={goBack} class="back-button">
+            <span>&#60; Previous</span>
         </div>
-        
-        <div className="prod-imag">
+        <div class="prod-imag">
+
             <div class="prod-name">
                 {name}
             </div>
-            <div className="secondary-line">
-                <span className="prod-date">
-                  {date}
-                </span>
-                <span className="prod-sector">
-                    {sector}
-                </span>
-                <span className="prod-location">
-                 {location}
-                </span>
-            </div>
-        </div>
-        <div className="prod-detail">
-            <div className="prod-price">
-                {value}
-            </div>
-            <div className="abc" >
-               <div className="map"> 
-   
+            <div class="secondary-line">
+              
+                    <span  class="prod-date">
+                        {date}
+                    </span>
+               
+                    <span class="prod-sector">
+                        {sector}
+                    </span>
+                    <span class="prod-location">
+                        {location}
+                    </span>
                 </div>
-               <div className="prod-descrip">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="prod-detail">
+        <div class="prod-price">
+            {value}
+        </div>
+        <div class="abc">
+            <div class="prod-map">
+                <img src="GoogleMapTA.jpg.webp" alt=""/>
+            </div>
+            <div class="prod-descrip">
                 {description}
-               </div>
-           </div>
+            </div>
         </div>
     </div>
     </div>
+
     
+
    </>
     )
 }
