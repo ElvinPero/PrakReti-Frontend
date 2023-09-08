@@ -3,6 +3,7 @@ import '../styles/cardDetail.css'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import { Navigate } from 'react-router-dom';
+import MapPage from './MapPage';
 
 
 const CardDetail = () => {
@@ -56,7 +57,7 @@ const CardDetail = () => {
         </div>
         <div class="abc">
             <div class="prod-map">
-                <img src="GoogleMapTA.jpg.webp" alt=""/>
+                <MapPage location={location}/>
             </div>
             <div class="prod-descrip">
                 {description}
