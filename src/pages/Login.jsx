@@ -10,17 +10,30 @@ const handleLogin=()=>{
 }
   return (
     <>
-    <div>Login</div>
-    <div>Login</div>
-    <div>Login</div>
-    <div>Login</div>
-    <div>Login</div>
+  
     <div className='login-container'>
-    <div>
-        <button className='login-btn' onClick={handleLogin}>
-        Login
+   
+    <div className="loginBack">
+    <div className='backsheet'>
+    
+    <form className='loginForm'>
+        <h3>Login</h3>
 
-        </button>
+        <label className="loginLabel"for="username">Username</label>
+        <input className="loginInput"type="text" placeholder="Email or Phone" id="username"/>
+
+        <label className="loginLabel"for="password">Password</label>
+        <input className="loginInput"type="password" placeholder="Password" id="password"/>
+
+        <button className="loginButton"onClick={handleLogin}>Log In</button>
+       
+    </form>
+    </div>
+
+
+
+
+      
     </div>
     </div>
 
