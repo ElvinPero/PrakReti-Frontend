@@ -63,9 +63,14 @@ const CardDetail = () => {
                 {description}
             </div>
         </div>
-    </div>
+        
     </div>
 
+   
+</div>
+{/* <div className='prodbuy' >
+            
+            </div> */}
     
 
    </>

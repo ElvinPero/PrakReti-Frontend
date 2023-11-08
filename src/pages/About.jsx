@@ -1,16 +1,9 @@
 import React from 'react'
-
+import '../styles/about.css'
 const About = () => {
   return (
-    <div>
-    <div>About</div>
-    <div>About</div>
-    <div>About</div>
-    <div>About</div>
-    <div>About</div>
-    <div>About</div>
-    <div>About</div>
-    <div>About</div>
+    <div className='about'>
+  
     
     
   </div>
@@ -18,3 +11,5 @@ const About = () => {
 }
 
 export default About
+
+
